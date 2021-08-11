@@ -33,28 +33,28 @@
                         <p>All endpoints are fully tested using Jest and SuperTest.</p>
                         <br>
                         <h3>URL Endpoints</h3>
-                        <p>post '/users': Add a new user to database. Name, email, and password are required.</p>
-                        <p>post '/users/login': Request user login with email and password.</p>
-                        <p>post '/users/logout': Logout user for an access token.</p>
-                        <p>post '/users/logoutAll': Logout user for all access tokens.</p>
-                        <p>get '/users/me': Get logged-in user data.</p>
-                        <p>patch '/users/me': Patch logged-in user data with the data included in the request.</p>
-                        <p>delete '/users/me': Delete logged-in user from database.</p>
-                        <p>post '/users/me/avatar': Add an avatar image file to logged-in user profile.</p>
-                        <p>delete '/users/me/avatar': Delete an avatar image file from logged-in user profile.</p>
-                        <p>get '/users/:id/avatar': Get the saved avatar image file of logged-in user profile.</p>
+                        <p><b>post '/users':</b> Add a new user to database. Name, email, and password are required.</p>
+                        <p><b>post '/users/login':</b> Request user login with email and password.</p>
+                        <p><b>post '/users/logout':</b> Logout user for an access token.</p>
+                        <p><b>post '/users/logoutAll':</b> Logout user for all access tokens.</p>
+                        <p><b>get '/users/me':</b> Get logged-in user data.</p>
+                        <p><b>patch '/users/me':</b> Patch logged-in user data with the data included in the request.</p>
+                        <p><b>delete '/users/me':</b> Delete logged-in user from database.</p>
+                        <p><b>>post '/users/me/avatar':</b> Add an avatar image file to logged-in user profile.</p>
+                        <p><b>delete '/users/me/avatar':</b> Delete an avatar image file from logged-in user profile.</p>
+                        <p><b>get '/users/:id/avatar':</b> Get the saved avatar image file of logged-in user profile.</p>
                         <br>
-                        <p>post '/tasks': Add a new task of a logged-in user to the database. A description is required.</p>
-                        <p>get '/tasks': Get tasks of the logged-in user. Query strings can be provided to filter and sort output data.</p>
+                        <p><b>post '/tasks':</b> Add a new task of a logged-in user to the database. A description is required.</p>
+                        <p><b>get '/tasks':</b> Get tasks of the logged-in user. Query strings can be provided to filter and sort output data.</p>
                         <ul>- 'completed' filters completed tasks. (e.g. GET /tasks?completed=false)</ul>
                         <ul>- 'limit' and 'skip' manipulate the result shown in a page. (e.g. GET /tasks?limit=10&skip=10)</ul>
                         <ul>- 'sortBy' given with 'createdAt:desc' let the result be in descending order. (e.g. GET /tasks?sortBy=createdAt:desc or GET /tasks?sortBy=createdAt:asc)</ul>
-                        <p>get '/tasks/:id': Get a task of a logged-in user by a unique id.</p>
-                        <p>patch '/tasks/:id': Patch data of a unique id with the data included in the request for a logged-in user.</p>
-                        <p>delete '/tasks/:id': Delete a task of a unique id for a logged-in user.</p>
-                        <p>post '/tasks/:id/image': Add an image to task data of a unique id in the database for a logged-in user.</p>
-                        <p>delete '/tasks/:id/image': Delete an image from a task of a unique id in the database for a logged-in user.</p>
-                        <p>get '/tasks/:id/image': Get the saved image file of a task by a unique id.</p>
+                        <p><b>get '/tasks/:id':</b> Get a task of a logged-in user by a unique id.</p>
+                        <p><b>patch '/tasks/:id':</b> Patch data of a unique id with the data included in the request for a logged-in user.</p>
+                        <p><b>delete '/tasks/:id':</b> Delete a task of a unique id for a logged-in user.</p>
+                        <p><b>post '/tasks/:id/image':</b> Add an image to task data of a unique id in the database for a logged-in user.</p>
+                        <p><b>delete '/tasks/:id/image':</b> Delete an image from a task of a unique id in the database for a logged-in user.</p>
+                        <p><b>get '/tasks/:id/image':</b> Get the saved image file of a task by a unique id.</p>
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@ button {
 button:hover {
     cursor: pointer;
     padding: 7px;
-    background: #771515;
+    background: #c09d00;
     border: none;
     border-radius: 10px;
     color: white;
@@ -142,7 +142,7 @@ button:hover {
 }
 
 .school h2 {
-    margin: 5px 0px;
+    margin-top: 20px;
 }
 
 /* Experience page */
