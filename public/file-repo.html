@@ -17,23 +17,42 @@
                     <label id="experience-menu">Experience</label>
                     <label id="projects-menu">Projects</label>
                     <div class="projects-links">
-                        <label id="weather-app-menu">Weather App</label>
-                        <label id="task-manager-api-menu">Task Manager API</label>
+                        <label id="file-repository-api-menu">File Repository API</label>
                         <label id="chat-app-menu">Chat App</label>
+                        <label id="task-manager-api-menu">Task Manager API</label>
+                        <label id="weather-app-menu">Weather App</label>
                     </div>
                 </div>
                 <div class="centered-form">
                     <div class="explanation">
-                        <h4>Github Link: <a href="" target="_blank"></a></h4>
-                        <h4>App on Heroku: <a href="" target="_blank"></a></h4>
+                        <h4>Github Link: <a href="https://github.com/KumamonRiceCake/file-repository-RESTful-API" target="_blank">https://github.com/KumamonRiceCake/file-repository-RESTful-API</a></h4>
+                        <h4>App on Heroku: <a href="https://kim-file-repository-api.herokuapp.com/" target="_blank">https://kim-file-repository-api.herokuapp.com/</a></h4>
                         <h3>Features</h3>
-                        <p>This RESTful API provides a set of tools that allows users to save and manage files.</p>
-                        <p></p>
-                        <p></p>
+                        <p>This <b>RESTful API</b> provides a set of tools that allows users to <b>save and manage files</b> using Cloud Object Storage.</p>
+                        <p>Files are uploaded and managed through Amazon Simple Storage Service (<b>Amazon S3</b>).</p>
+                        <p>File data is accessible and manageable only by the authenticated owner.</p>
+                        <p>Saved file data is tracked by the <b>MongoDB</b> database management system.</p>
+                        <p>All endpoints are fully tested using Jest and SuperTest.</p>
                         <br>
                         <h3>URL Endpoints</h3>
-                        <p></p>
-                        <p></p>
+                        <p><b>post '/file':</b> Upload file (file size: max 20Mb). File and directory are required.</p>
+                        <p><b>get '/file':</b> Get the URL link of an uploaded file. Directory and filename are required.</p>
+                        <p><b>delete '/file':</b> Delete file or folder. Directory and filename are required.</p>
+                        <p><b>post '/file/folders':</b> Create folder in directory. Directory and folderName are required.</p>
+                        <p><b>get '/file/folders':</b> List folders in directory. Directory is required.</p>
+                        <p><b>get '/file/directory':</b> List files and folders in a directory. Directory is required.</p>
+                        <p><b>delete '/file/directory':</b> Empty directory with contents inside it. Directory is required.</p>
+                        <p><b>get '/file/me':</b> List all files of the user. Query strings can be provided to sort output data.</p>
+                        <ul>- 'limit' and 'skip' manipulate the result shown in a page. (e.g. GET /file/me?limit=10&skip=10)</ul>
+                        <ul>- 'sortBy' given with 'createdAt:desc' let the result be in descending order. (e.g. GET /file/me?sortBy=createdAt:desc or GET /file/me?sortBy=createdAt:asc)</ul>
+                        <br>
+                        <p><b>post '/users':</b> Add a new user to the database. Name, email, and password are required.</p>
+                        <p><b>post '/users/login':</b> Request user login with email and password.</p>
+                        <p><b>post '/users/logout':</b> Logout user for an access token.</p>
+                        <p><b>post '/users/logoutAll':</b> Logout user for all access tokens.</p>
+                        <p><b>get '/users/me':</b> Get logged-in user data.</p>
+                        <p><b>patch '/users/me':</b> Patch logged-in user data with the data included in the request.</p>
+                        <p><b>delete '/users/me':</b> Delete logged-in user from database.</p>
                     </div>
                 </div>
             </div>

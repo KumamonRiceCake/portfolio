@@ -6,6 +6,7 @@ const $projectMenu = document.querySelector('#projects-menu')
 const $weatherAppMenu = document.querySelector('#weather-app-menu')
 const $taskManagerMenu = document.querySelector('#task-manager-api-menu')
 const $chatAppMenu = document.querySelector('#chat-app-menu')
+const $fileRepositoryMenu = document.querySelector('#file-repository-api-menu')
 //const $ = document.querySelector('')
 
 $homeMenu.addEventListener('click', () => {
@@ -34,4 +35,8 @@ $taskManagerMenu.addEventListener('click', () => {
 
 $chatAppMenu.addEventListener('click', () => {
     location.href = 'chat-app.html'
+})
+
+$fileRepositoryMenu.addEventListener('click', () => {
+    location.href = 'file-repo.html'
 })
