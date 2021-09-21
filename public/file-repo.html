@@ -36,12 +36,12 @@
                         <br>
                         <h3>URL Endpoints</h3>
                         <p><b>post '/file':</b> Upload file (file size: max 20Mb). File and directory are required.</p>
-                        <p><b>get '/file':</b> Get the URL link of an uploaded file. Directory and filename are required.</p>
+                        <p><b>get '/file/link':</b> Get the URL link of an uploaded file. Directory and filename are required.</p>
                         <p><b>delete '/file':</b> Delete file or folder. Directory and filename are required.</p>
                         <p><b>post '/file/folders':</b> Create folder in directory. Directory and folderName are required.</p>
                         <p><b>get '/file/folders':</b> List folders in directory. Directory is required.</p>
-                        <p><b>get '/file/directory':</b> List files and folders in a directory. Directory is required.</p>
-                        <p><b>delete '/file/directory':</b> Empty directory with contents inside it. Directory is required.</p>
+                        <p><b>get '/file/list':</b> List files and folders in a directory. Directory is required.</p>
+                        <p><b>delete '/file/directory':</b> Delete folder and its contents recursively. Directory is required.</p>
                         <p><b>get '/file/me':</b> List all files of the user. Query strings can be provided to sort output data.</p>
                         <ul>- 'limit' and 'skip' manipulate the result shown in a page. (e.g. GET /file/me?limit=10&skip=10)</ul>
                         <ul>- 'sortBy' given with 'createdAt:desc' let the result be in descending order. (e.g. GET /file/me?sortBy=createdAt:desc or GET /file/me?sortBy=createdAt:asc)</ul>
