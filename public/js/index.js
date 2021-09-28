@@ -7,36 +7,40 @@ const $weatherAppMenu = document.querySelector('#weather-app-menu')
 const $taskManagerMenu = document.querySelector('#task-manager-api-menu')
 const $chatAppMenu = document.querySelector('#chat-app-menu')
 const $fileRepositoryMenu = document.querySelector('#file-repository-api-menu')
-//const $ = document.querySelector('')
+const $webAlbumAppMenu = document.querySelector('#web-album-app-menu')
 
 $homeMenu.addEventListener('click', () => {
     location.href = '/'
 })
 
 $educationMenu.addEventListener('click', () => {
-    location.href = 'education.html'
+    location.href = '/education'
 })
 
 $experienceMenu.addEventListener('click', () => {
-    location.href = 'experience.html'
+    location.href = '/experience'
 })
 
 $projectMenu.addEventListener('click', () => {
-    location.href = 'projects.html'
+    location.href = '/projects'
 })
 
 $weatherAppMenu.addEventListener('click', () => {
-    location.href = 'weather-app.html'
+    location.href = '/projects/weather-app'
 })
 
 $taskManagerMenu.addEventListener('click', () => {
-    location.href = 'task-manager.html'
+    location.href = '/projects/task-manager'
 })
 
 $chatAppMenu.addEventListener('click', () => {
-    location.href = 'chat-app.html'
+    location.href = '/projects/chat-app'
 })
 
 $fileRepositoryMenu.addEventListener('click', () => {
-    location.href = 'file-repo.html'
+    location.href = '/projects/file-repo'
+})
+
+$webAlbumAppMenu.addEventListener('click', () => {
+    location.href = '/projects/web-album'
 })

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeong Won Kim Portfolio</title>
+        <link rel="icon" href="/img/icon.jpg">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            {{>header}}
+            <div class="main-content">
+                {{>sidemenu}}
+                <div class="centered-form">
+                    <div class="explanation">
+                        <h4>Github Link: <a href="https://github.com/KumamonRiceCake/image-repository" target="_blank">https://github.com/KumamonRiceCake/image-repository</a></h4>
+                        <h4>App on Heroku: <a href="https://kim-image-repository.herokuapp.com/" target="_blank">https://kim-image-repository.herokuapp.com/</a></h4>
+                        <img class="app-image" src="/img/album0.png" style="max-width: 60%; height: auto;">
+                        <h3>Features</h3>
+                        <p>This is a <b>full-stack</b> development project created with <b>Node.js</b>.</p>
+                        <p>This web application provides <b>web image album services</b> to users.</p>
+                        <p>Users can <b>upload, view, delete, download, and search</b> images through their private dashboard.</p>
+                        <p>User albums are managed privately using a private cloud repository on <b>Amazon S3</b> and secured with email and password combinations.</p>
+                        <p>User and image data is tracked by the <b>MongoDB</b> database management system.</p>
+                        <p>This program is quality assured with <b>integration tests</b>.</p>
+                        <br>
+                        <h3>How to use</h3>
+                        <h4>Log in</h4>
+                        <p>If you already have an account, log in with your email address and password</b>.</p>
+                        <p>If not, click the <b>"Register"</b> button.</p>
+                        <img class="app-image" src="/img/album1.png" style="max-width: 50%; height: auto;">
+                        <h4>Sign up</h4>
+                        <p>You can create a new account using your name, email address, and password.</p>
+                        <p>Please note that <b>the password must be at least 7 characters</b>.</p>
+                        <img class="app-image" src="/img/album2.png" style="max-width: 50%; height: auto;">
+                        <h4>Dashboard</h4>
+                        <p>If you successfully log in or sign up, you will see your private dashboard.</p>
+                        <p>On the left side, you will see your <b>images</b> and <b>folders</b> in the current directory.</p>
+                        <p>If you click an image, you can see its <b>thumbnail</b> on the right side.</p>
+                        <p>You can <b>download</b> the image or <b>delete</b> it by clicking the <b>popup buttons</b> under the image.</p>
+                        <p>You can also <b>upload</b> a new image or <b>create</b> a folder on the right side.</p>
+                        <img class="app-image" src="/img/album3.png" style="max-width: 60%; height: auto;">
+                        <p>If you click a folder, you will see a <b>folder image</b> instead of an image thumbnail.</p>
+                        <p>You can <b>enter</b> the folder or <b>delete</b> it by clicking the <b>popup buttons.</b></p>
+                        <img class="app-image" src="/img/album4.png" style="max-width: 60%; height: auto;">
+                        <h4>Image tag search</h4>
+                        <p>You can <b>search images with tags</b> using the <b>search box</b> on top.</p>
+                        <p>Images with the same tag show up on the result page.</p>
+                        <p>You can also see thumbnails, download images, and delete images on this page.</p>
+                        <img class="app-image" src="/img/album5.png" style="max-width: 60%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -7,22 +7,9 @@
     </head>
     <body>
         <div class="main">
-            <div class="title">
-                <h1>Projects</h1>
-            </div>
+            {{>header}}
             <div class="main-content">
-                <div class="sidemenu">
-                    <label id="home-menu">Home</label>
-                    <label id="education-menu">Education</label>
-                    <label id="experience-menu">Experience</label>
-                    <label id="projects-menu">Projects</label>
-                    <div class="projects-links">
-                        <label id="file-repository-api-menu">File Repository API</label>
-                        <label id="chat-app-menu">Chat App</label>
-                        <label id="task-manager-api-menu">Task Manager API</label>
-                        <label id="weather-app-menu">Weather App</label>
-                    </div>
-                </div>
+                {{>sidemenu}}
                 <div class="centered-form">
                     <div class="node-apps">
                         <h1>Node.js Projects</h1>
@@ -47,6 +34,5 @@
                 </div>
             </div>
         </div>
-        <script src="/js/index.js"></script>
     </body>
 </html>

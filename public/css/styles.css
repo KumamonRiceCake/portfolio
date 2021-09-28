@@ -59,13 +59,13 @@ button:hover {
     max-height: 100vh;
 }
 
-.title {
+header {
     height: 100px;
     background: #aedae6;
     width: 100%;
 }
 
-.title h1{
+header h1{
     margin: 20px 38px;
     font-size: 35px;
     display: flex;
@@ -75,7 +75,7 @@ button:hover {
     display: flex;
 }
 
-.sidemenu {
+sidemenu {
     height: 90vh;
     color: white;
     background: rgba(120,120,120,1);
@@ -83,15 +83,16 @@ button:hover {
     font-size: 20px;
     flex-direction: column;
     display: flex;
+    font-weight: bold;
 }
 
-.sidemenu label {
+sidemenu label {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
 
-.sidemenu label:hover {
+sidemenu label:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -104,6 +105,7 @@ button:hover {
 
 .projects-links label {
     margin-top: 15px;
+    color: rgb(218, 205, 253);
 }
 
 .centered-form {
